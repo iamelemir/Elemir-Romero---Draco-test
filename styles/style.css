@@ -5,14 +5,29 @@
 
 body {
   padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(255, 0, 128);
 }
 
 .container {
   padding: 10px;
-  width: 80%;
-  height: 600px;
-  background-color: aqua;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  display: block;
+}
+
+footer {
+  display: block;
 }
