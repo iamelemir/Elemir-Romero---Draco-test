@@ -6,27 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/styleDesing.css">
+    <script src="functions/functions.js"></script>
+    <script>
+        function show() {
+            const squareYellow = document.getElementById("squareYellow").style.display = "none";
+            const triangleBlue = document.getElementById("triangleBlue").style.display = "none";
+            const circleRed = document.getElementById("circleRed").style.display = "none";
+            const textYellow = document.getElementById("textYellow").style.display = "none";
+            const textBlue = document.getElementById("textBlue").style.display = "none";
+            const textRed = document.getElementById("textRed").style.display = "none";
+        }
+    </script>
     <title>Draco</title>
 </head>
+<!-- https://www.lawebdelprogramador.com/foros/JavaScript/1461283-Ejecutar-una-funcion-cuando-la-pagina-se-haya-cargado-solucion.html -->
 
-<body>
+<body onload=show()>
     <div class="container">
         <nav>
-            <h1>prueba tecnica Draco</h1>
-            <h1>Elemir romero</h1>
-            <h1>Elemir romero</h1>
-
-            <h1>working...</h1>
-
+            <span class="title">LOS COLORES PRIMARIOS</span>
         </nav>
-        <br>
         <section>
-            <h1>prueba tecnica Draco</h1>
+            <div class="imagenes">
+                <img id="squareYellow" src="images/yellow.png" alt="">
+                <img id="triangleBlue" src="images/blue.png" alt="">
+                <img id="circleRed" src="images/red.png" alt="">
+            </div>
+            <div>
+                <div>
+                    <span class="yellow">
+            Los colores primarios de este sistema son el rojo, el verde y el azul; para obtener amarillo hay que
+            superponer luz roja y luz verde.
+          </span>
+                </div>
+                <div>
+                    <span class="blue">
+            En el sistema aditivo de síntesis de color, en el cual los colores se obtienen mezclando luz de color en
+            lugar de pigmentos, el azul es un color primario, junto con el rojo y el verde.
+          </span>
+                </div>
+                <div>
+                    <span class="red">
+            En el sistema aditivo de síntesis de color, en el cual los colores se obtienen mezclando luz de color en
+            lugar de pigmentos, el rojo es un color primario, junto con el verde y el azul.
+          </span>
+                </div>
+
+            </div>
         </section>
         <footer>
-            <h1>
-                sssss
-            </h1>
+            <button class="boton-back">
+        ATRAS </button>
+            <progress class="progress" max="100" value="70">
+        70% </progress>
+            <button class="boton-next">
+        SIGUIENTE
+      </button>
         </footer>
     </div>
 </body>

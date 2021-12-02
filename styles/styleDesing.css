@@ -1,0 +1,51 @@
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    ;
+}
+
+.boton-back {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(158, 197, 223);
+}
+
+.boton-next {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(158, 197, 223);
+}
+
+.progress {
+    color: rgb(206, 105, 46);
+    width: 50%;
+    height: 20px;
+}
+
+.imagenes {
+    display: grid;
+}
+
+.blue {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.yellow {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
