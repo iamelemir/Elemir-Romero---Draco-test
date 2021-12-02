@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleDesing.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="functions.js"></script>
+    <script>
 
+        $(document).ready(function () {
+            $('#boton-back').click(function (event) {
+                var url = window.location.href
+                var ficheroActual = url.substring(url.lastIndexOf('/') + 1)
+                switch (ficheroActual) {
+                    case 'red.html':
+                        urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'blue.html')
+                        window.location.replace(urlFinal)
+                        break
+                }
+            })
+        })
+    </script>
     <title>Draco</title>
 </head>
 
