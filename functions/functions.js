@@ -1,19 +1,49 @@
 
+$(document).ready(function () {
+    $('#boton-back').click(function (event) {
+        var url = window.location.href;
 
-const start = document.getElementById("start").style.display = "block";
+        var ficheroActual = url.substring(url.lastIndexOf('/') + 1)
 
-// const squareYellow = document.getElementById("squareYellow").style.display = "block";
-// const triangleBlue = document.getElementById("triangleBlue").style.display = "none";
-// const circleRed = document.getElementById("circleRed").style.display = "none";
-// const textYellow = document.getElementById("textYellow").style.display = "none";
-// const textBlue = document.getElementById("textBlue").style.display = "none";
-// const textRed = document.getElementById("textRed").style.display = "none";
+        switch (ficheroActual) {
+            case 'yellow.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'index.html')
+                window.location.replace(urlFinal);
+                break;
+            case 'blue.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'yellow.html')
+                window.location.replace(urlFinal);
+                break;
+            case 'red.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'blue.html')
+                window.location.replace(urlFinal);
+                break;
+        }
+    });
 
-function displayShow() {
-    console.log('estoy aqui')
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+    $('#boton-next').click(function (event) {
+        var url = window.location.href;
+
+        var ficheroActual = url.substring(url.lastIndexOf('/') + 1)
+
+        switch (ficheroActual) {
+            case 'index.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'yellow.html')
+                window.location.replace(urlFinal);
+                break;
+            case 'yellow.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'blue.html')
+                window.location.replace(urlFinal);
+                break;
+            case 'blue.html':
+                urlFinal = url.replace(url.substring(url.lastIndexOf('/') + 1), 'red.html')
+                window.location.replace(urlFinal);
+                break;
+        }
+    });
+});
+
+function show() {
+    var botonBack = document.getElementById("boton-back");
+    botonBack.disabled = true;
 }

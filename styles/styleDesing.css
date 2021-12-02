@@ -1,51 +1,135 @@
 .title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: bold;
-    ;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .boton-back {
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgb(158, 197, 223);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(189, 189, 189);
+  background-color: rgb(255, 255, 255);
 }
 
 .boton-next {
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgb(158, 197, 223);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(189, 189, 189);
+  background-color: rgb(255, 255, 255);
 }
 
 .progress {
-    color: rgb(206, 105, 46);
-    width: 50%;
-    height: 20px;
+  width: 50%;
+  height: 20px;
 }
 
 .imagenes {
-    display: grid;
+  display: grid;
 }
 
 .blue {
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .red {
-    color: red;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .yellow {
-    color: yellow;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.start {
+  display: contents;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-yellow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 214, 214);
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 206, 23);
+}
+
+.home-yellow:hover {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  color: rgb(209, 206, 23);
+  transition: all 1s ease;
+}
+
+.home-blue {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 214, 214);
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 39, 211);
+}
+.home-blue:hover {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 21, 206);
+  transition: all 1s ease;
+}
+
+.home-red {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 214, 214);
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(190, 19, 19);
+}
+.home-red:hover {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  color: rgb(206, 0, 0);
+  transition: all 1s ease;
+}
+
+#squareYellow:hover {
+  width: 100px;
+  height: 100px;
+  transition: all 1s ease;
+}
+
+#triangleBlue:hover {
+  width: 100px;
+  height: 100px;
+  transition: all 1s ease;
+}
+
+#circleRed:hover {
+  width: 100px;
+  height: 100px;
+  transition: all 1s ease;
 }

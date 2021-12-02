@@ -12,30 +12,28 @@
     <title>Draco</title>
 </head>
 
-<body onload=show()>
+<body>
     <div class="container">
         <nav>
-            <span class="title">LOS COLORES PRIMARIOS</span>
+            <span class="title">EL COLOR ROJO</span>
         </nav>
         <section>
-            <div id="start" class="start">
-                <span class="home-yellow">
-                    AMARILLO
-                </span>
-                <span class="home-blue">
-                    AZUL
-                </span>
-                <span class="home-red">
-                    ROJO
+            <div class="imagenes">
+                <img id="circleRed" src="images/red.png" alt="">
+            </div>
+            <div>
+                <span id="textRed" class="red">
+                    En el sistema aditivo de síntesis de color, en el cual los colores se obtienen mezclando luz de
+                    color en lugar de pigmentos, el rojo es un color primario, junto con el verde y el azul.
                 </span>
             </div>
         </section>
         <footer>
             <button id="boton-back" class="boton-back">
                 BACK </button>
-            <progress class="progress" id="progress" max="100" value="0">
+            <progress class="progress" max="100" value="100">
             </progress>
-            <button id="boton-next" class="boton-next">
+            <button disabled id="boton-next" class="boton-next">
                 NEXT
             </button>
         </footer>
